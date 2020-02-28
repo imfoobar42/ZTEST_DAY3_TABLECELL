@@ -1,0 +1,41 @@
+<mvc:View controllerName="ZTEST_DAY3_TABLECELL.ZTEST_DAY3_TABLECELL.controller.S1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+		<pages>
+				<Page id="page" title="{i18n>title}">
+					<subHeader>
+						<Bar>
+							<contentLeft>
+								<!--search="handleSearch"-->
+								<SearchField width="50%" liveChange="handleSearch"/>
+							</contentLeft>
+						</Bar>
+					</subHeader>
+					<content>
+						<Table id="idProductsTable" inset="false" mode="SingleSelectMaster" selectionChange="onItemPress" >
+							<headerToolbar>
+								<Toolbar>
+									<Title text="Employees" level="H2"/>
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+								<Column width="12em">
+									<Text text="id"/>
+								</Column>
+								<Column minScreenWidth="Tablet" demandPopin="true">
+									<Text text="Name"/>
+								</Column>
+								<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+									<Text text="Age"/>
+								</Column>
+								<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+									<Text text="Mobile"/>
+								</Column>
+							</columns>
+						</Table>
+					</content>
+				</Page>
+			</pages></App>
+	</Shell>
+</mvc:View>
